@@ -22,7 +22,7 @@
 
  ___________________________________________________________________
  
- link: https://aleksandrgogolushko.github.io/Rock-Scissors-Paper/
+Demo: https://aleksandrgogolushko.github.io/Rock-Scissors-Paper/
 
 ____________________________________________________________________
  
