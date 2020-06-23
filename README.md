@@ -1,7 +1,7 @@
  # Rock-Paper-Scissors 
  ***Game Rock-Paper-Scissors***
 
->Game rules:
+>**Game rules**
 
   Simple version
 
