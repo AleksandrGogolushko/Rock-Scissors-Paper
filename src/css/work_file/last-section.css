@@ -1,0 +1,496 @@
+section {
+  width: 100vw;
+  height: 100vh;
+  background-color: #008000;
+  position: relative;
+  transition: all 1s;
+  transform: translateY(0); }
+  section .center-section {
+    width: 98vw;
+    height: 95%;
+    background-color: #0d47a1;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    box-shadow: 0 1px 20px 7px rgba(0, 0, 0, 0.11), 0 2px 20px 5px rgba(0, 0, 0, 0.11), 0 4px 4px 6px rgba(0, 0, 0, 0.11), 0 6px 8px 5px rgba(0, 0, 0, 0.11), 0 8px 16px 10px rgba(0, 0, 0, 0.11); }
+    section .center-section .statistic {
+      background: #efefef;
+      width: 100%;
+      height: 5vw;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      box-shadow: inset rgba(0, 0, 0, 0.6) 0 -2px 5px, inset rgba(252, 255, 255, 0.7) 0 2px 5px, rgba(0, 0, 0, 0.8) 0 8px 60px -1px;
+      background: #efefef; }
+      section .center-section .statistic .player-name {
+        width: 45%;
+        height: 100%;
+        text-align: center;
+        overflow: hidden;
+        position: relative; }
+        section .center-section .statistic .player-name .player {
+          font-size: 2vw;
+          font-family: "Rubik Mono One", sans-serif;
+          top: 50%;
+          position: absolute;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%); }
+      section .center-section .statistic .rules-dificlt {
+        width: 45%;
+        height: 100%;
+        text-align: center;
+        padding: 1%;
+        position: relative; }
+        section .center-section .statistic .rules-dificlt .rules-dificlt-wraper {
+          top: 50%;
+          position: absolute;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%); }
+          section .center-section .statistic .rules-dificlt .rules-dificlt-wraper p {
+            font-size: 1.2vw;
+            font-family: "Russo One", sans-serif;
+            text-transform: uppercase; }
+      section .center-section .statistic .win-lose {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        section .center-section .statistic .win-lose p {
+          font-size: 2.5vw;
+          font-family: "Black Ops One", cursive; }
+        section .center-section .statistic .win-lose .slash {
+          margin-bottom: 5%; }
+    section .center-section .weapon-player {
+      width: 7vw;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+      text-align: right; }
+      section .center-section .weapon-player .weapon {
+        border-top-right-radius: 1vw;
+        border-bottom-right-radius: 1vw; }
+        section .center-section .weapon-player .weapon img {
+          width: 100%;
+          position: relative;
+          left: 0;
+          transition: all 0.5s;
+          cursor: pointer; }
+          section .center-section .weapon-player .weapon img.select {
+            transform: scale(0.9);
+            transition: all 0.4s; }
+    section .center-section .weapon-enemy {
+      width: 7vw;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(0, -50%); }
+      section .center-section .weapon-enemy .weapon {
+        border-top-left-radius: 1vw;
+        border-bottom-left-radius: 1vw; }
+        section .center-section .weapon-enemy .weapon img {
+          width: 100%;
+          position: relative;
+          left: 0;
+          transition: all 0.5s; }
+          section .center-section .weapon-enemy .weapon img.select {
+            transform: scale(0.9);
+            transition: all 0.4s; }
+    section .center-section .weapon {
+      width: 100%;
+      box-shadow: inset rgba(0, 0, 0, 0.6) 0 -2px 5px, inset rgba(252, 255, 255, 0.7) 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px;
+      padding: 10%;
+      background: #f1faee; }
+    section .center-section .ring {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      width: 40%;
+      height: 50%;
+      border: 0.5vw solid white;
+      overflow: hidden; }
+      section .center-section .ring .enemy-select img {
+        left: auto;
+        right: 15%; }
+        section .center-section .ring .enemy-select img.fight {
+          transform: translate(-30vw, -50%) scale(2); }
+      section .center-section .ring img {
+        width: 15%;
+        position: absolute;
+        top: 50%;
+        left: -20%;
+        margin-right: -80%;
+        transform: translate(-50%, -50%) scale(2);
+        transition: all 0.8s; }
+        section .center-section .ring img.fight {
+          transform: translate(14vw, -50%) scale(2); }
+      section .center-section .ring .result-wraper {
+        width: 80%;
+        height: 15%;
+        background: aliceblue;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: -40%;
+        transition: all 0.5s;
+        border-bottom-left-radius: 6vw;
+        border-bottom-right-radius: 6vw; }
+        section .center-section .ring .result-wraper .result {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%);
+          font-size: 1.8vw;
+          font-family: "Rubik Mono One", sans-serif; }
+  section .right-section {
+    width: 50vw;
+    height: 100%;
+    background: #ffd700;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.6s;
+    box-shadow: inset rgba(0, 0, 0, 0.6) 0 -2px 5px, inset rgba(252, 255, 255, 0.7) 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px; }
+  section .left-section {
+    width: 50vw;
+    height: 100%;
+    background: #008000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.6s;
+    box-shadow: inset rgba(0, 0, 0, 0.6) 0 -2px 5px, inset rgba(252, 255, 255, 0.7) 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px; }
+  section .show-rules {
+    width: 30vw;
+    height: auto;
+    background: #f0f8ff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 45.2vh);
+    z-index: 5;
+    transition: all 0.6s;
+    border-radius: 1vw;
+    box-shadow: inset rgba(0, 0, 0, 0.6) 0 -2px 5px, inset rgba(252, 255, 255, 0.7) 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px;
+    text-align: center; }
+    section .show-rules.show {
+      transform: translate(-50%, -45%) !important; }
+    section .show-rules.hover {
+      transform: translate(-50%, 44.8vh) !important; }
+    section .show-rules h2 {
+      text-transform: capitalize;
+      padding-top: 1vw;
+      font-size: 1.5vw;
+      font-family: "Russo One", sans-serif;
+      cursor: pointer; }
+    section .show-rules .new-game {
+      width: 100%;
+      height: 40%; }
+      section .show-rules .new-game h2 {
+        text-transform: none;
+        cursor: default;
+        margin: 4% auto 2%; }
+      section .show-rules .new-game button {
+        cursor: pointer;
+        font-weight: bold;
+        width: 6vw;
+        height: 4vh;
+        border: none;
+        font-size: 1vw;
+        text-transform: uppercase;
+        border-radius: 0.4vw;
+        margin: 8% 4%;
+        margin-top: 4%;
+        transition: all 1s;
+        background: #f0f8ff;
+        box-shadow: 3px 3px 5px #ccd3d9, -3px -3px 5px #ffffff; }
+        section .show-rules .new-game button:active {
+          transition: all 1s;
+          background: #f0f8ff;
+          box-shadow: inset 7px 7px 15px #ccd3d9, inset -7px -7px 15px #ffffff; }
+        section .show-rules .new-game button:focus {
+          outline: none; }
+    section .show-rules .select-rules {
+      position: relative;
+      width: 100%;
+      height: 50%; }
+      section .show-rules .select-rules img {
+        position: relative;
+        top: 50%;
+        width: 55%;
+        margin: 3.5%; }
+      section .show-rules .select-rules .discription {
+        text-align: justify;
+        width: 70%;
+        font-size: 0.8vw;
+        font-family: "Russo One", sans-serif;
+        cursor: default;
+        margin: 3% auto; }
+    section .show-rules .select-simple,
+    section .show-rules .select-bonus {
+      display: none; }
+  section .open {
+    transform: translate(-50%, 0%) !important;
+    transition: all 0.6s; }
+  section p {
+    cursor: default; }
+
+@media screen and (max-device-width: 425px) {
+  section .center-section .statistic {
+    height: 10vw;
+    box-shadow: inset rgba(0, 0, 0, 0.6) 0 -1px 3px, inset rgba(252, 255, 255, 0.7) 0 1px 3px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px; }
+    section .center-section .statistic .player-name .player {
+      font-size: 3vw;
+      margin-top: 0; }
+    section .center-section .statistic .rules-dificlt .rules-dificlt-wraper p {
+      font-size: 2vw; }
+    section .center-section .statistic .win-lose p {
+      font-size: 4vw; }
+  section .center-section .weapon-player,
+  section .center-section .weapon-enemy {
+    width: 15vw; }
+    section .center-section .weapon-player .weapon,
+    section .center-section .weapon-enemy .weapon {
+      border-top-right-radius: 5vw;
+      border-bottom-right-radius: 5vw; }
+      section .center-section .weapon-player .weapon img,
+      section .center-section .weapon-enemy .weapon img {
+        margin-bottom: 20%; }
+        section .center-section .weapon-player .weapon img.select,
+        section .center-section .weapon-enemy .weapon img.select {
+          transform: scale(0.9);
+          transition: all 0.4s; }
+      section .center-section .weapon-player .weapon img:first-child,
+      section .center-section .weapon-enemy .weapon img:first-child {
+        margin-top: 20%; }
+  section .center-section .weapon-enemy .weapon {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 5vw;
+    border-bottom-left-radius: 5vw; }
+    section .center-section .weapon-enemy .weapon img {
+      width: 100%;
+      position: relative;
+      left: 0;
+      transition: all 0.5s;
+      margin-left: 5%; }
+      section .center-section .weapon-enemy .weapon img.select {
+        transform: scale(0.9);
+        transition: all 0.4s; }
+  section .center-section .ring {
+    width: 50%;
+    height: 40%; }
+    section .center-section .ring .enemy-select img.fight {
+      transform: translate(-40vw, -50%) scale(2.5); }
+    section .center-section .ring img.fight {
+      transform: translate(20vw, -50%) scale(2.5); }
+    section .center-section .ring .result-wraper {
+      border-bottom-left-radius: 2vw;
+      border-bottom-right-radius: 2vw; }
+      section .center-section .ring .result-wraper .result {
+        font-size: 3.5vw; }
+  section .center-section .show-rules {
+    width: 55vw;
+    transform: translate(-50%, 46.5vh);
+    border-radius: 1vw;
+    box-shadow: inset rgba(0, 0, 0, 0.6) 0 -2px 5px, inset rgba(252, 255, 255, 0.7) 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px; }
+    section .center-section .show-rules h2 {
+      font-size: 3.5vw; }
+    section .center-section .show-rules .new-game {
+      width: 100%;
+      height: 40%; }
+      section .center-section .show-rules .new-game h2 {
+        text-transform: none;
+        cursor: default;
+        margin: 4% auto 2%; }
+      section .center-section .show-rules .new-game button {
+        width: 14vw;
+        height: 3vh;
+        font-size: 2vw; }
+    section .center-section .show-rules .select-rules {
+      position: relative;
+      width: 100%;
+      height: 50%; }
+      section .center-section .show-rules .select-rules img {
+        position: relative;
+        top: 50%;
+        width: 85%;
+        margin: 3.5%; }
+      section .center-section .show-rules .select-rules .discription {
+        width: 85%;
+        font-size: 2.5vw; }
+  section .center-section p {
+    cursor: default; } }
+
+@media screen and (min-device-width: 425px) and (orientation: portrait) {
+  section .center-section .statistic {
+    height: 10vw;
+    box-shadow: inset rgba(0, 0, 0, 0.6) 0 -1px 3px, inset rgba(252, 255, 255, 0.7) 0 1px 3px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px; }
+    section .center-section .statistic section .center-section .statistic .player-name .player {
+      font-size: 3vw; }
+    section .center-section .statistic .rules-dificlt .rules-dificlt-wraper p {
+      font-size: 2vw; }
+    section .center-section .statistic .win-lose p {
+      font-size: 3.5vw; }
+  section .center-section .weapon-player,
+  section .center-section .weapon-enemy {
+    width: 12vw; }
+    section .center-section .weapon-player .weapon,
+    section .center-section .weapon-enemy .weapon {
+      border-top-right-radius: 3vw;
+      border-bottom-right-radius: 3vw; }
+      section .center-section .weapon-player .weapon img,
+      section .center-section .weapon-enemy .weapon img {
+        margin-bottom: 20%; }
+        section .center-section .weapon-player .weapon img.select,
+        section .center-section .weapon-enemy .weapon img.select {
+          transform: scale(0.9);
+          transition: all 0.4s; }
+      section .center-section .weapon-player .weapon img:first-child,
+      section .center-section .weapon-enemy .weapon img:first-child {
+        margin-top: 20%; }
+  section .center-section .weapon-enemy .weapon {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 5vw;
+    border-bottom-left-radius: 5vw; }
+    section .center-section .weapon-enemy .weapon img {
+      width: 100%;
+      position: relative;
+      left: 0;
+      transition: all 0.5s;
+      margin-left: 5%; }
+      section .center-section .weapon-enemy .weapon img.select {
+        transform: scale(0.9);
+        transition: all 0.4s; }
+  section .center-section .ring {
+    width: 50%;
+    height: 40%; }
+    section .center-section .ring .enemy-select img.fight {
+      transform: translate(-40vw, -50%) scale(2.5); }
+    section .center-section .ring img.fight {
+      transform: translate(20vw, -50%) scale(2.5); }
+    section .center-section .ring .result-wraper {
+      border-bottom-left-radius: 2vw;
+      border-bottom-right-radius: 2vw; }
+      section .center-section .ring .result-wraper .result {
+        font-size: 3.5vw; }
+  section .center-section .show-rules {
+    width: 55vw;
+    transform: translate(-50%, 46.5vh);
+    border-radius: 1vw;
+    box-shadow: inset rgba(0, 0, 0, 0.6) 0 -2px 5px, inset rgba(252, 255, 255, 0.7) 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px; }
+    section .center-section .show-rules h2 {
+      font-size: 3vw; }
+    section .center-section .show-rules .new-game {
+      width: 100%;
+      height: 40%; }
+      section .center-section .show-rules .new-game h2 {
+        text-transform: none;
+        cursor: default;
+        margin: 4% auto 2%; }
+      section .center-section .show-rules .new-game button {
+        width: 10vw;
+        height: 3vh;
+        font-size: 1.8vw;
+        box-shadow: 6px 6px 10px #ccd3d9, -6px -6px 10px #ffffff; }
+    section .center-section .show-rules .select-rules {
+      position: relative;
+      width: 100%;
+      height: 50%; }
+      section .center-section .show-rules .select-rules img {
+        position: relative;
+        top: 50%;
+        width: 70%;
+        margin: 3.5%; }
+      section .center-section .show-rules .select-rules .discription {
+        width: 85%;
+        font-size: 1.8vw; }
+  section .center-section p {
+    cursor: default; } }
+
+@media screen and (max-device-height: 425px) and (orientation: landscape) {
+  section .center-section .statistic {
+    height: 13vh;
+    box-shadow: inset rgba(0, 0, 0, 0.6) 0 -1px 3px, inset rgba(252, 255, 255, 0.7) 0 1px 3px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px; }
+    section .center-section .statistic section .center-section .statistic .player-name .player {
+      font-size: 4vh; }
+    section .center-section .statistic .rules-dificlt .rules-dificlt-wraper p {
+      font-size: 2.5vh; }
+    section .center-section .statistic .win-lose p {
+      font-size: 5vh; }
+  section .center-section .weapon-player,
+  section .center-section .weapon-enemy {
+    width: 12vh; }
+    section .center-section .weapon-player .weapon,
+    section .center-section .weapon-enemy .weapon {
+      border-top-right-radius: 1vw;
+      border-bottom-right-radius: 1vw; }
+      section .center-section .weapon-player .weapon img,
+      section .center-section .weapon-enemy .weapon img {
+        margin-bottom: 20%; }
+      section .center-section .weapon-player .weapon img:first-child,
+      section .center-section .weapon-enemy .weapon img:first-child {
+        margin-top: 20%; }
+  section .center-section .weapon-enemy .weapon {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw; }
+    section .center-section .weapon-enemy .weapon img {
+      margin-left: 5%; }
+  section .center-section .ring {
+    width: 45%;
+    height: 50%; }
+    section .center-section .ring .enemy-select img.fight {
+      transform: translate(-40vw, -50%) scale(1.5); }
+    section .center-section .ring img {
+      transform: translate(-50%, -50%) scale(1.5); }
+      section .center-section .ring img.fight {
+        transform: translate(20vw, -50%) scale(1.5); }
+    section .center-section .ring .result-wraper {
+      height: 20%;
+      border-bottom-left-radius: 1vw;
+      border-bottom-right-radius: 1vw; }
+      section .center-section .ring .result-wraper .result {
+        font-size: 2vw; }
+  section .center-section .show-rules {
+    width: 60vh;
+    transform: translate(-50%, 42.5vh);
+    border-radius: 1vw;
+    box-shadow: inset rgba(0, 0, 0, 0.6) 0 -2px 5px, inset rgba(252, 255, 255, 0.7) 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px; }
+    section .center-section .show-rules.show {
+      transform: translate(-50%, -42%) !important; }
+    section .center-section .show-rules h2 {
+      font-size: 3vh;
+      margin: 2% auto 2%; }
+    section .center-section .show-rules .new-game button {
+      width: 12vh;
+      height: 4vh;
+      font-size: 2.2vh;
+      box-shadow: 6px 6px 10px #ccd3d9, -6px -6px 10px #ffffff; }
+    section .center-section .show-rules .select-rules {
+      position: relative;
+      width: 100%;
+      height: 50%; }
+      section .center-section .show-rules .select-rules img {
+        position: relative;
+        top: 50%;
+        width: 50%;
+        margin: 1%; }
+      section .center-section .show-rules .select-rules .discription {
+        width: 90%;
+        font-size: 2.5vh;
+        margin: 2% auto; }
+  section .center-section p {
+    cursor: default; } }

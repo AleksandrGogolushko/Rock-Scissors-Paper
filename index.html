@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=no,maximum-scale=1">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="shortcut icon" href="./src/image/icon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Luckiest+Guy&family=Oswald&family=Rubik+Mono+One&family=Russo+One&family=Signika&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css">
+  </head>
+  <body>
+    <div class="wrapper-content">
+    <header>
+      <div class="content-wraper">
+        <div class="title">
+          <h1><span id="rock">rock</span>-<span id="scissors">scissors</span>-<span id="paper">paper</span>
+          </h1>
+          <div class="hover-img">
+            <img class="rock" src="./src/image/rockV4.png" alt="rock">
+            <img class="scissors" src="./src/image/scissorsV1.png" alt="scissors">
+            <img class="paper" src="./src/image/paper.png" alt="paper">
+          </div>
+        </div>
+        <button class="btn btn-primary" data-scroll="#start">start</button>
+        <div class="line"></div>
+      </div>
+    </header>
+    <main>
+      <div class="line-wrapper">
+        <div class="line-right"></div>
+        <div class="line-center"></div>
+        <div class="line-left"></div>
+      </div>
+      <div id="start" class="settings">
+        <form id="select">
+          <div class="you-name">
+            <h2 class="choose you">Enter your name</h2>
+            <p class="welcom" data-check="false"></p>
+            <input type="text" name="name" autocomplete="off" maxlength="10" id="name" placeholder="Enter your name!">
+            <button class="confirm-name">ok</button>
+          </div>
+          <div class="rules">
+            <p class="choose-rule" data-check="false"></p>
+            <h2 class="choose">choose a game rule</h2>
+            <input type="radio" name="rules" id="simple" value="simple">
+            <input type="radio" name="rules" id="bonus" value="bonus">
+            <p class="simple">simple</p>
+            <p class="bonus">bonus</p>
+          </div>
+          <div class="difficultis">
+            <p class="choose-difficultis" data-check="false"></p>
+            <h2 class="choose">choose a difficultis</h2>
+            <input type="radio" name="difficultis" id="easy" value="easy">
+            <input type="radio" name="difficultis" id="medium" value="medium">
+            <input type="radio" name="difficultis" id="hard" value="hard">
+            <button class="difficultis-btn easy">easy</button>
+            <button class="difficultis-btn medium">medium</button>
+            <button class="difficultis-btn hard">hard</button>
+          </div>
+            <div class="simple-rules">
+              <h2>Simple Rules</h2>
+              <ul>
+                <li>rock</li>
+                <li>paper</li>
+                <li>scissors</li>
+              </ul>
+              <img class="rule-img" src="./src/image/image-rules-color.svg" alt="simple rules">
+              <button class="confirm simple-btn">confirm</button>
+            </div>
+            <div class="icon-left">
+              <div class="icon-wraper">
+                <img src="./src/image/rockColor.svg" alt="rock">
+                <img src="./src/image/paperColor.svg" alt="paper">
+                <img src="./src/image/scissorsColor.svg" alt="scissors">
+              </div>
+            </div>
+          <div class="bonus-rules">
+            <h2>Bonus Rules</h2>
+            <div class="list">
+              <ul>
+                <li>rock</li>
+                <li>paper</li>
+                <li>scissors</li>
+              </ul>
+              <ul>
+                <li>lizard</li>
+                <li>spock</li>
+              </ul>
+            </div>
+            <img class="rule-img" src="./src/image/image-rules-bonus-color.svg" alt="simple rules">
+            <button class="confirm bonus-btn">confirm</button>
+          </div>
+          <div class="icon-right">
+            <div class="icon-wraper">
+              <img src="./src/image/rockColor.svg" alt="rock">
+              <img src="./src/image/paperColor.svg" alt="paper">
+              <img src="./src/image/scissorsColor.svg" alt="scissors">
+              <img src="./src/image/lizardColor.svg" alt="lizard">
+              <img src="./src/image/spockColor.svg" alt="spock">
+            </div>
+          </div>
+          <div class="go">
+            <button id="ok">let's go</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <section>
+      <div class="left-section"></div>
+      <div class="center-section">
+        <div class="statistic">
+          <div class="player-name">
+            <p class="player"></p>
+          </div>
+          <div class="win-lose">
+            <p class="win">W</p>
+            <p class="slash">:</p>
+            <p class="lose">L</p>
+          </div>
+          <div class="rules-dificlt">
+            <div class="rules-dificlt-wraper">
+              <p class="stat-dificlt"></p>
+              <p class="stat-rules"></p>
+            </div>
+          </div>
+        </div>
+        <div class="weapon-player">
+          <div class="weapon">
+            <img src="./src/image/rock.svg" alt="rock">
+            <img src="./src/image/paper.svg" alt="paper">
+            <img src="./src/image/scissors.svg" alt="scissors">
+            <img src="./src/image/lizard.svg" alt="lizard">
+            <img src="./src/image/spock.svg" alt="spock">
+          </div>
+        </div>
+        <div class="weapon-enemy">
+          <div class="weapon">
+            <img src="./src/image/rock.svg" alt="rock">
+            <img src="./src/image/paper.svg" alt="paper">
+            <img src="./src/image/scissors.svg" alt="scissors">
+            <img src="./src/image/lizard.svg" alt="lizard">
+            <img src="./src/image/spock.svg" alt="spock">
+          </div>
+        </div>
+        <div class="show-rules" data-open="false">
+          <h2>game rules</h2>
+          <div class="select-rules">
+            <div class="select-simple">
+              <p class="discription">
+                Although the game has a lot of complexity to it, the rules to
+                play it are pretty simple. The game is played where players
+                deliver signals that will represent the elements of the game;
+                rock, paper and scissors. The outcome of the game is determined
+                by 3 simple rules:
+              </p>
+              <img src="./src/image/image-rules-color.svg" alt="simpleRules">
+            </div>
+            <div class="select-bonus">
+              <p class="discription">
+                The rules are very similar to the original game, but with a few
+                more options to choose from. The game is played where players
+                deliver signals that will represent the elements of the game;
+                rock, paper, scissors, lizard, spock. The outcome of the game is
+                determined by 5 rules:
+              </p>
+              <img src="./src/image/image-rules-bonus-color.svg" alt="bonusRules">
+            </div>
+          </div>
+          <div class="new-game">
+            <h2>You want start new game?</h2>
+            <button id="yes">yes</button>
+            <button id="no">no</button>
+          </div>
+        </div>
+        <div class="ring">
+          <div class="result-wraper">
+            <p class="result"></p>
+          </div>
+          <div class="player-select">
+            <img src="./src/image/rockColor.svg" alt="rock">
+            <img src="./src/image/paperColor.svg" alt="paper">
+            <img src="./src/image/scissorsColor.svg" alt="scissors">
+            <img src="./src/image/lizardColor.svg" alt="lizard">
+            <img src="./src/image/spockColor.svg" alt="spock">
+          </div>
+          <div class="enemy-select">
+            <img src="./src/image/rockColor.svg" alt="rock">
+            <img src="./src/image/paperColor.svg" alt="paper">
+            <img src="./src/image/scissorsColor.svg" alt="scissors">
+            <img src="./src/image/lizardColor.svg" alt="lizard">
+            <img src="./src/image/spockColor.svg" alt="spock">
+          </div>
+        </div>
+      </div>
+      <div class="right-section"></div>
+    </section>
+  </div>
+  <script src="./src/js/lib/jquery-1.11.3.min.js"></script>
+  <script src="./src/js/app/main.js"></script>
+  </body>
+</html>
