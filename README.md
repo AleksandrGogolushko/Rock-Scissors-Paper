@@ -22,4 +22,7 @@ determined by 5 rules: rock->scissors and lizzard; scissors->paper and lizzard;
 
  ___________________________________________________________________
  
+ link: https://aleksandrgogolushko.github.io/Rock-Scissors-Paper/
+
+____________________________________________________________________
  
